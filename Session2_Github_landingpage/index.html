@@ -9,9 +9,9 @@
 <body>
     <form name="form01" onsubmit="return validateForm()">
         <label for="name">Name:</label>
-        <input type="text" class="name" name="name"><br><br>
+        <input type="text" class="name" name="txtName"><br><br>
         <label for="email">Email:</label>
-        <input type="email" class="email" name="email"><br><br>
+        <input type="email" class="email" name="txtEmail"><br><br>
         <label for="NL">Newsletter:</label>
         <input type="checkbox" class="checkbox" name="checkbox"><br><br>
         <label for="gender">How did you find us:</label>
@@ -29,10 +29,14 @@
 </form> 
     <script>
       function validateForm(){
-    let x = document.forms["form01"]["name"].value;
-    let y = document.forms["form01"]["Phnumber"].value;    
-    let z = document.forms["form01"]["email"].value;
-    alert([x ,y ,z])
+          let formInfo = document.forms.form01; // = document.forms["form1"]
+          let name = formInfo.elements.txtName.value;
+          let email = formInfo.elements.txtEmail.value;
+        alert([name, email]);
+    //let x = document.forms["form01"]["txtName"].value;
+    //let y = document.forms["form01"]["NL"].value;    
+    //let z = document.forms["form01"]["txtEmail"].value;
+    //alert([x ,y ,z])
 }
     </script>
 </body>
