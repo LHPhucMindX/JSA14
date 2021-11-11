@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="form01" onsubmit="return validateForm()">
+        <label for="name">Name:</label>
+        <input type="text" class="name" name="name"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" class="email" name="email"><br><br>
+        <label for="NL">Newsletter:</label>
+        <input type="checkbox" class="checkbox" name="checkbox"><br><br>
+        <label for="gender">How did you find us:</label>
+    <select id="gender">
+        <option value="friends">Friends</option>
+        <option value="screng">Search engine</option>
+        <option value="ad">Advertisement</option>
+        <option value="Other">Other</option>
+    </select>
+    <br><br>
+        <label>Drop us a line</label>
+        <textarea name="message" placeholder="Your message"></textarea>
+    <br><br>
+        <input type="submit" value="Submit"> 
+</form> 
+    <script>
+      function validateForm(){
+    let x = document.forms["form01"]["name"].value;
+    let y = document.forms["form01"]["Phnumber"].value;    
+    let z = document.forms["form01"]["email"].value;
+    alert([x ,y ,z])
+}
+    </script>
+</body>
+</html>
