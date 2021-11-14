@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="session2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet"/>
 </head>
 <body>
     <header>
         <div class="header_content">
           <nav class="header_nav">
             <div class="header_icon">
-              <img src="F:\JSA14\omnifood\resources\img\logo-white.png" alt="" />
+              <img src="F:\JSA14\Session2_Github_landingpage\omnifood\resources\img\logo-white.png" alt="" />
             </div>
             <ul class="main_nav">
               <li class="header_li">food delivery</li>
@@ -23,42 +24,58 @@
           </nav>
           <div class="header_button">
             <h1>good bye junk food.<br />hello super healthy meals.</h1>
-            <button id="b1">i'm hungry</button>
-            <button id="b2">show me more</button>
+            <button id="button1">i'm hungry</button>
+            <button id="button2">show me more</button>
           </div>
         </div>
       </header>
+      <section class="form">
+        <div class="formtitle">
+          <h2>We're happy to hear from you</h2>
+        </div>
     <form name="form01" onsubmit="return validateForm()">
-        <label for="name">Name:</label>
-        <input type="text" class="name" name="txtName"><br><br>
-        <label for="email">Email:</label>
-        <input type="email" class="email" name="txtEmail"><br><br>
-        <label for="NL">Newsletter:</label>
-        <input type="checkbox" class="checkbox" name="checkbox"><br><br>
-        <label for="gender">How did you find us:</label>
-    <select id="gender">
+      <div class="row">
+        <label for="name" class="col1">Name:</label>
+        <input type="text" class="name" name="txtName" class="col2">
+      </div>
+      <br>
+      <div class="row">
+        <label class="col1" for="email">Email:</label>
+        <input type="email" class="email" name="txtEmail" class="col2">
+      </div>
+      <br>
+        <div class="row">
+        <label class="col1" for="NL">Newsletter:</label>
+        <input type="checkbox" name="checkbox"  id="checkbox" class="col2p"><p>Yes, please</p>
+      </div>
+      <br>
+        <div class="row">
+        <label class="col1" for="select">How did you find us:</label>
+    <select id="selectform" class="col2">
         <option value="friends">Friends</option>
         <option value="screng">Search engine</option>
         <option value="ad">Advertisement</option>
         <option value="Other">Other</option>
     </select>
-    <br><br>
-        <label>Drop us a line</label>
-        <textarea name="message" placeholder="Your message"></textarea>
-    <br><br>
-        <input type="submit" value="Submit"> 
-        <!-- overflow filter scale -->
+  </div>
+  <br>
+    <div class="row">
+        <label class="col1">Drop us a line</label>
+        <textarea name="message" placeholder="Your message" id="message" class="col2"></textarea>
+      </div>
+      <br>
+      <div class="row">
+       <input type="submit" value="Submit" id="submit"> 
+      </div>
+      </section>
 </form> 
     <script>
       function validateForm(){
           let formInfo = document.forms.form01; // = document.forms["form1"]
           let name = formInfo.elements.txtName.value;
           let email = formInfo.elements.txtEmail.value;
-        alert([name, email]);
-    //let x = document.forms["form01"]["txtName"].value;
-    //let y = document.forms["form01"]["NL"].value;    
-    //let z = document.forms["form01"]["txtEmail"].value;
-    //alert([x ,y ,z])
+          let msg = formInfo.elements.message.value;
+        alert([name, email, message]);
 }
     </script>
 </body>
