@@ -5,8 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="session2.css">
 </head>
 <body>
+    <header>
+        <div class="header_content">
+          <nav class="header_nav">
+            <div class="header_icon">
+              <img src="F:\JSA14\omnifood\resources\img\logo-white.png" alt="" />
+            </div>
+            <ul class="main_nav">
+              <li class="header_li">food delivery</li>
+              <li class="header_li">how it works</li>
+              <li class="header_li">our city</li>
+              <li class="header_li">sign up</li>
+            </ul>
+          </nav>
+          <div class="header_button">
+            <h1>good bye junk food.<br />hello super healthy meals.</h1>
+            <button id="b1">i'm hungry</button>
+            <button id="b2">show me more</button>
+          </div>
+        </div>
+      </header>
     <form name="form01" onsubmit="return validateForm()">
         <label for="name">Name:</label>
         <input type="text" class="name" name="txtName"><br><br>
@@ -26,6 +47,7 @@
         <textarea name="message" placeholder="Your message"></textarea>
     <br><br>
         <input type="submit" value="Submit"> 
+        <!-- overflow filter scale -->
 </form> 
     <script>
       function validateForm(){

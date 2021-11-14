@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    box-sizing: inherit;
+    margin: 0;
+  }
+  html {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    color: #555;
+  }
+header {
+    /* background-image: black
+    url(F:\JSA14\Session2_Github_landingpage\omnifood\resources\css\img\hero.jpg);
+    background-size: cover; */
+    height: 721px; 
+    background-attachment: fixed;
+    background-position: center; 
+    background-color: black;
+  }
+  .header_nav {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 36px;
+    align-items: center;
+  }
+  .header_icon img {
+    height: 134px;
+    margin-left: -120px;
+  }
+  .header_li {
+    list-style: none;
+    margin: 10px 30px;
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 300;
+    padding-bottom: 8px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+  }
+  .main_nav {
+    display: flex;
+  }
+  .header_li:hover {
+    cursor: pointer;
+    border-bottom: #e67e22 2px solid;
+  }
+  .header_button {
+    margin-left: 57px;
+    margin-top: 24px;
+  }
+  .header_content {
+    margin-left: 138px;
+  }
+  .header_content .header_button h1 {
+    color: #fff;
+    font-size: 322%;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-bottom: 40px;
+  }
+  #b1 {
+    background-color: #e67e22;
+    height: 50px;
+    width: 210px;
+    border-radius: 200px;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 300;
+    font-family: "Lato";
+    border: none;
+    margin-left: 10px;
+    transition: 0.15s;
+  }
+  #b1:hover {
+    background-color: #c66918;
+    cursor: pointer;
+  }
+  #b2 {
+    height: 50px;
+    width: 210px;
+    margin-left: 15px;
+    background-color: transparent;
+    border: #e67e22 1px solid;
+    border-radius: 200px;
+    color: #e67e22;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-family: "Lato";
+    font-weight: 300;
+    transition: 0.15s;
+  }
+  #b2:hover {
+    background-color: #e67e22;
+    color: #fff;
+    cursor: pointer;
+  }
