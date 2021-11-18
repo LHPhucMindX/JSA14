@@ -1,0 +1,44 @@
+body{
+    background-color: teal;
+}
+.contain{
+    width: 400px; 
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    padding: 50px;
+    box-shadow: 0 0 15px black;
+    border-radius: 15px;
+    margin-top: 15px;
+    height: 270px;
+}
+form{
+    box-sizing: border-box;
+    width: 260px;
+    margin: 10px auto 0;
+    padding-bottom: 40px;
+    border-radius: 3px;
+}
+form h1{
+    box-sizing: border-box;
+    padding-left: 25px ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+input{
+    margin-bottom: 20px;
+    width: 250px;
+    border: none;
+    padding: 10px 0;
+    border-bottom: solid 1px #15eb65;
+    background: linear-gradient(to bottom #173946 #ebff64);
+    background-repeat: no-repeat;
+}
+button{
+    border: none;
+    background: red;
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 6px;
+    width: 200px;
+    color: black;
+    margin-left: 25px;
+}
