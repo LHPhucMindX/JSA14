@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index4.css">
+</head>    
+<body>
+    <!-- div*2, .(class) -->
+    <div class="container">
+        <div class="nav padding-20">
+            <h3>Danh Bạ</h3>
+            <div class="button-wrapper">
+                <button class="btn padding-20 bg-red">Delete</button>
+                <button class="btn padding-20 bg-green">Add</button>
+            </div>
+
+        </div>
+        <div class="content">
+
+            <table id="table">
+                <thead class="row">
+                        <th ><input type="checkbox" name="check-all"></th>
+                        <th>Number</th>
+                        <th>Name</th>
+                        <th>Mobile</th>
+                        <th>Email</th>
+                        <th>Address</th>
+                        <th>Actions</th>
+                </thead>
+                <tr>
+                    <td><input type="checkbox" name="check-all"></td>
+                    <td>1</td>
+                    <td>MindX</td>
+                    <td>2389475</td>
+                    <td>89q72ry@72rt6y3er78.com</td>
+                    <td>345 haoisuno</td>
+                    <td>
+                        <i class="fas fa-pen padding-5" ></i>
+                        <i class="fas fa-trash padding-5"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="check-all"></td>
+                    <td>1</td>
+                    <td>MindX</td>
+                    <td>2389475</td>
+                    <td>89q72ry@72rt6y3er78.com</td>
+                    <td>345 haoisuno</td>
+                    <td>
+                        <i class="fas fa-pen padding-5" ></i>
+                        <i class="fas fa-trash padding-5"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="check-all"></td>
+                    <td>1</td>
+                    <td>MindX</td>
+                    <td>2389475</td>
+                    <td>89q72ry@72rt6y3er78.com</td>
+                    <td>345 haoisuno</td>
+                    <td>
+                        <i class="fas fa-pen padding-5" ></i>
+                        <i class="fas fa-trash padding-5"></i>
+                    </td>
+                </tr>
+            </table>
+                        <div class="form-warpper">
+            <form id="edit-info" onsubmit="handleSubmit()">
+            <input type="text" placeholder="name">
+            <input type="number" placeholder="sdt">
+            <input type="email" placeholder="email">
+            <input type="text" placeholder="address">
+            <button type="submit" class="btn bg-aqua">UPDATE</button>
+        </form>
+    </div>
+    </div>
+        </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/js/all.min.js" integrity="sha512-cyAbuGborsD25bhT/uz++wPqrh5cqPh1ULJz4NSpN9ktWcA6Hnh9g+CWKeNx2R0fgQt+ybRXdabSBgYXkQTTmA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="index4.js"></script>
+</body>
+</html>
