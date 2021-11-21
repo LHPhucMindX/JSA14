@@ -13,17 +13,19 @@ h2{
   text-transform: uppercase;
   font-size: 36px;
   text-align: center;
+  margin-top: 10px;
 }
-h2:after{
+h2:after {
   display: block;
-  background-color: #e67e22;
-  width: 100px;
   height: 2px;
+  background-color: #e67e22;
+  content: " ";
+  width: 100px;
   margin: 0 auto;
-  margin-top: 30px;
+  margin-top: 10px;
 }
 form {
-  margin-top: 79px;
+  margin-top: 40px;
 }
 form .row label{
   color: #555;
@@ -47,6 +49,11 @@ input,
   margin-bottom: 26px;
   max-width: 870px;
   margin: 0 auto 0 auto;
+}
+.col {
+  display: block;
+  float: left;
+  margin: 1% 0 1% 1.6%;
 }
 .col1{
   width: 32.26% ;
@@ -101,7 +108,7 @@ select {
   outline: none;
 }
 header{
-  background-image: url(F:\JSA14\Session2_Github_landingpage\omnifood\resources\css\img\hero.jpg); 
+  background-image: url(https://webpage.pace.edu/kp31080n/omnifood/resources/css/img/hero.jpg); 
   background-size: cover; 
   height: 721px; 
   background-attachment: fixed;
@@ -186,4 +193,110 @@ header{
   background-color: #e67e22;
   color: #fff;
   cursor: pointer;
+}
+.long-copy{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.featureh3{
+  padding: 10px;
+}
+.meals-showcase {
+  list-style: none;
+  width: 100%;
+}
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+.section-meals {
+  padding: 0;
+}
+.meals-showcase li {
+  display: block;
+  float: left;
+  width: 25%;
+}
+.meal-photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+
+}
+
+.meal-photo img {
+  opacity: 0.7;
+  width: 100%;
+  height: auto;
+  transform: scale(1.15);
+}
+figure {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 40px;
+  margin-inline-end: 40px;
+}
+.meals-showcase li {
+  display: block;
+  float: left;
+  width: 25%;
+}
+img {
+  border-style: none;
+}
+.meal-photo:hover{
+  transform: scale(1);
+  transition: transform 0.5s,opacity 0.5s;
+  opacity: 1;
+}
+.h2form{
+  padding-top: 50px;
+}
+.section-steps {
+  background-color: #d6d6d6;
+  height: 450px;
+}
+.app-screen {
+  width: 40%;
+}
+.worksstep {
+  margin-bottom: 50px;
+}
+.worksstep div {
+  color: #e67e22;
+  border: 2px solid #e67e22;
+  display: block;
+  border-radius: 50%;
+  height: 50px;
+  width: 55px;
+  text-align: center;
+  padding: 5px;
+  float: left;
+  font-size: 150%;
+  margin-right: 25px;
+}
+.btn-app img {
+  height: 50px;
+  width: auto;
+  margin-right: 10px;
+}
+.colworkstep{
+  display: flex;
+  justify-content: center;
+}
+.stepsh2{
+  margin-top: 0px;
+}
+.stepsdiv2{
+  margin-top: 20px;
+}
+.cityimg{
+  width: 200px;
 }
